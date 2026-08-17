@@ -86,7 +86,7 @@ useEffect(() => {
 
   return (
     <div className="bg-[url('/assets/bg_three.webp')] bg-cover bg-no-repeat">
-      <div className="flex flex-col items-center h-670 md:h-770 lg:h-1230 3xl:h-1250">
+      <div className="flex flex-col items-center h-640 md:h-770 lg:h-1200 3xl:h-1200">
         <h2 className="font-playfair-display font-semibold text-base md:text-xl lg:text-[38px] text-center pt-12 md:pt-18 lg:pt-32 text-[#B35800]">
           INTRODUCING
         </h2>
@@ -345,7 +345,7 @@ useEffect(() => {
            <br className="hidden md:block" />
             one of the happiest days of our life.
           </p>
-          <div className="flex gap-3 justify-center items-center mt-4">
+          {/* <div className="flex gap-3 justify-center items-center mt-4">
             <a href="https://www.instagram.com/theinvitearc/" target="_blank">
               <img
                 src="/assets/instagram.webp"
@@ -358,7 +358,7 @@ useEffect(() => {
                 Follow InviteArc on Instagram
               </a>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
