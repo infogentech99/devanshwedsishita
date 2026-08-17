@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Shivangani & Ashanka ",
-    description: "Join as they begin their forever. 8, 9 & 11 March 2026",
+    description: "Join as they begin their forever. 20 & 21 November, 2026",
     url: "https://shivanganiwedsashanka.vercel.app/",
     siteName: "InviteArc",
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Shivangani & Ashanka",
-    description: "Join as they begin their forever. 20 & 21 March, 2026",
+    description: "Join as they begin their forever. 20 & 21 November, 2026",
     images: ["/og.jpg"],
   },
 
@@ -59,7 +59,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 
-       {/* <DisableInspect />  */}
+       <DisableInspect /> 
         {children}
       </body>
     </html>
