@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://2states-demo.vercel.app/"),
+  metadataBase: new URL("https://shivanganiwedsashanka.vercel.app/"),
 
   openGraph: {
     title: "Shivangani & Ashanka ",
     description: "Join as they begin their forever. 8, 9 & 11 March 2026",
-    url: "https://2states-demo.vercel.app/",
+    url: "https://shivanganiwedsashanka.vercel.app/",
     siteName: "InviteArc",
     images: [
       {
@@ -37,12 +37,12 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Shivangani & Ashanka",
-    description: "Join as they begin their forever. 8, 9 & 11 March, 2026",
+    description: "Join as they begin their forever. 20 & 21 March, 2026",
     images: ["/og.jpg"],
   },
 
  other: {
-    "og:image:secure_url": "https://2states-demo.vercel.app/og.jpg",
+    "og:image:secure_url": "https://shivanganiwedsashanka.vercel.app/og.jpg",
     "og:image:type": "image/jpg",
   },
 };
