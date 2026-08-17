@@ -5,35 +5,89 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 export default function CoupleMessage() {
+  // const TARGET_DATE = new Date("2026-11-21").getTime();
+  // const [timeLeft, setTimeLeft] = useState({
+  //   days: 14,
+  //   hours: 12,
+  //   minutes: 28,
+  // });
+
+  // useEffect(() => {
+  //   const updateCountdown = () => {
+  //     const now = new Date().getTime();
+  //     const diff = TARGET_DATE - now;
+  //     if (diff <= 0) {
+  //       setTimeLeft({ days: 0, hours: 0, minutes: 0 });
+  //       return;
+  //     }
+  //     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  //     const hours = Math.floor(
+  //       (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+  //     );
+  //     const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+  //     setTimeLeft({ days, hours, minutes });
+  //   };
+
+  //   updateCountdown(); // first run
+  //   const interval = setInterval(updateCountdown, 60000); // every minute
+
+  //   return () => clearInterval(interval);
+  // }, []);
+
   const TARGET_DATE = new Date("2026-11-21").getTime();
-  const [timeLeft, setTimeLeft] = useState({
-    days: 14,
-    hours: 12,
-    minutes: 28,
-  });
 
-  useEffect(() => {
-    const updateCountdown = () => {
-      const now = new Date().getTime();
-      const diff = TARGET_DATE - now;
-      if (diff <= 0) {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0 });
-        return;
-      }
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-      );
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+const [timeLeft, setTimeLeft] = useState({
+  days: 14,
+  hours: 12,
+  minutes: 28,
+  seconds: 0,
+});
 
-      setTimeLeft({ days, hours, minutes });
-    };
+useEffect(() => {
+  const updateCountdown = () => {
+    const now = new Date().getTime();
+    const diff = TARGET_DATE - now;
 
-    updateCountdown(); // first run
-    const interval = setInterval(updateCountdown, 60000); // every minute
+    if (diff <= 0) {
+      setTimeLeft({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      });
+      return;
+    }
 
-    return () => clearInterval(interval);
-  }, []);
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+    const hours = Math.floor(
+      (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+
+    const minutes = Math.floor(
+      (diff % (1000 * 60 * 60)) / (1000 * 60)
+    );
+
+    const seconds = Math.floor(
+      (diff % (1000 * 60)) / 1000
+    );
+
+    setTimeLeft({
+      days,
+      hours,
+      minutes,
+      seconds,
+    });
+  };
+
+  updateCountdown();
+
+  // Update every second
+  const interval = setInterval(updateCountdown, 1000);
+
+  return () => clearInterval(interval);
+}, []);
 
   const testimonial = [
     {
@@ -257,6 +311,15 @@ export default function CoupleMessage() {
                 MINUTES
               </p>
             </h2>
+
+ <h2 className="font-playfair-display font-medium text-4xl md:text-3xl lg:text-[52px] text-center text-[#B35800]">
+              {timeLeft.seconds}
+              <p className="font-eb-garamond font-medium text-xs md:text-sm lg:text-base">
+            
+                SECONDS
+              </p>
+            </h2>
+
           </div>
           <img
             src="/assets/heart.webp"
@@ -273,7 +336,7 @@ export default function CoupleMessage() {
               <img
                 src="/assets/instagram.webp"
                 alt="instagram"
-                className="w-7.5 h-7.5 md:w-10 md:h-10 lg:w-5.5 lg:h-5 mt-4"
+                className="w-7 h-7 md:w-10 md:h-10 lg:w-5.5 lg:h-5.5 mt-4"
               />
             </a>
             <p className="font-eb-garamond font-medium text-sm md:text-base lg:text-lg text-center mt-4 text-[#B35800]">
