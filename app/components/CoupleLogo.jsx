@@ -13,7 +13,7 @@ export default function CoupleLogo() {
 
             
             <div className="md:hidden bg-[url('/assets/respo_four.webp')] bg-cover bg-no-repeat">
-                <div className="flex flex-col items-center h-240">
+                <div className="flex flex-col items-center h-220">
                     <img src="/assets/couple_logo.webp" alt="logo" width={250} height={300} className="w-30 h-28 mt-37" />
                 </div>
             </div>   
