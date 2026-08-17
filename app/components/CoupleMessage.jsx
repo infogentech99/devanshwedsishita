@@ -5,36 +5,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 export default function CoupleMessage() {
-  // const TARGET_DATE = new Date("2026-11-21").getTime();
-  // const [timeLeft, setTimeLeft] = useState({
-  //   days: 14,
-  //   hours: 12,
-  //   minutes: 28,
-  // });
-
-  // useEffect(() => {
-  //   const updateCountdown = () => {
-  //     const now = new Date().getTime();
-  //     const diff = TARGET_DATE - now;
-  //     if (diff <= 0) {
-  //       setTimeLeft({ days: 0, hours: 0, minutes: 0 });
-  //       return;
-  //     }
-  //     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  //     const hours = Math.floor(
-  //       (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-  //     );
-  //     const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-  //     setTimeLeft({ days, hours, minutes });
-  //   };
-
-  //   updateCountdown(); // first run
-  //   const interval = setInterval(updateCountdown, 60000); // every minute
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
   const TARGET_DATE = new Date("2026-11-21").getTime();
 
 const [timeLeft, setTimeLeft] = useState({
@@ -136,60 +106,96 @@ useEffect(() => {
           <hr className="w-10 lg:w-20 md:border my-3 md:my-6 border-[#B35800]" />
         </div>
 
-        <div className="relative w-full flex justify-center items-center mt-6 md:mt-8">
-          {/* Swiper - BACKGROUND */}
-          <div className="absolute inset-0 flex items-center justify-center z-0">
-            <Swiper
-              modules={[Autoplay, Pagination]}
-              autoplay={{
-                delay: 3500,
-                disableOnInteraction: false,
-              }}
-              loop
-              centeredSlides={true}
-              spaceBetween={20}
-              // pagination={{ clickable: true }}
-              className="md:w-90 lg:w-180 w-60 py-12 overflow-visible"
-              breakpoints={{
-                0: {
-                  slidesPerView: 1,
-                },
-                768: {
-                  slidesPerView: 1,
-                },
-                1024: {
-                  slidesPerView: 1,
-                },
-              }}
-            >
-              {testimonial.map((item, index) => (
-                <SwiperSlide key={index} className="flex justify-center">
-                  <img
-                    src={item.img}
-                    alt=""
-                    className="w-50 md:w-70 md:h-100 md:mt-10 lg:mt-0 lg:w-140 lg:h-195 h-65 cover"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+    <div className="relative w-full flex justify-center items-center mt-6 md:mt-8">
 
-          {/* Couple Image - FOREGROUND */}
+  {/* IMAGE WINDOW / CLIPPING AREA */}
+  <div
+    className="
+      absolute
+      z-0
+      flex
+      justify-center
+      items-center
+      overflow-hidden
+
+      w-50
+      h-65
+      mt-[-2px]
+      mr-15
+
+      md:w-65
+      md:h-95
+      md:mt-[-5px]
+      md:mr-25
+
+      lg:w-150
+      lg:h-180
+      lg:mt-0
+      lg:mr-40
+
+      rounded-t-[50%]
+      rounded-b-[18%]
+    "
+  >
+    <Swiper
+      modules={[Autoplay, Pagination]}
+      autoplay={{
+        delay: 3500,
+        disableOnInteraction: false,
+      }}
+      loop={true}
+      centeredSlides={true}
+      slidesPerView={1}
+      spaceBetween={0}
+      pagination={{ clickable: true }}
+
+      className="w-full h-full"
+    >
+      {testimonial.map((item, index) => (
+        <SwiperSlide
+          key={index}
+          className="!flex !items-center !justify-center"
+        >
           <img
-            src="/assets/couple_img_n.webp"
-            alt="couple_img"
+            src={item.img}
+            alt=""
             className="
-            relative
-            z-10
-            pointer-events-none
-            w-100 h-97
-            md:w-150 md:h-145
-            lg:w-300 lg:h-290
-            mt-2 md:mt-4
-            object-contain
-        "
+              w-full
+              h-full
+              object-cover
+              select-none
+              pointer-events-none
+            "
           />
-        </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+
+  {/* FRAME - ALWAYS ON TOP */}
+  <img
+    src="/assets/couple_img_n.webp"
+    alt="couple_img"
+    className="
+      relative
+      z-10
+      pointer-events-none
+      w-100
+      h-97
+      md:w-150
+      md:h-145
+      lg:w-300
+      lg:h-290
+      mt-2
+      md:mt-4
+      lg:mt-0
+      object-contain
+    "
+  />
+
+</div>
+
+
 
         <h2
           className="font-playfair-display font-medium italic text-3xl md:text-5xl lg:text-[100px] text-center pt-15 

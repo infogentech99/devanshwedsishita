@@ -160,7 +160,7 @@ body {
   }
 }
 
-.swiper-pagination {
+/* .swiper-pagination {
   position: static !important;
   display: flex;
   justify-content: center;
@@ -176,7 +176,44 @@ body {
 
 .swiper-pagination-bullet-active {
   background: #ffffff!important;
+} */
+
+/* .couple-swiper .swiper-pagination {
+    bottom: -28px !important;
+  } */
+
+  .couple-swiper .swiper-pagination-bullet {
+    width: 7px !important;
+    height: 7px !important;
+    background: #cdcdcd !important;
+    opacity: 0.35 !important;
+  }
+
+.swiper-pagination-bullet-active{
+  background: #cdcdcd !important;
 }
+
+  .couple-swiper .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+  }
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 20px !important;
+  }
+
+@media (max-width: 768px){
+
+ .swiper-pagination-bullet {
+    width: 5px !important;
+    height: 5px !important;
+    background: #cdcdcd !important;
+    opacity: 0.35 !important;
+    gap:3px;
+  
+  }
+
+}
+
 
 
 @keyframes petalFall{
@@ -284,3 +321,6 @@ body {
 
 }
 }
+
+
+
