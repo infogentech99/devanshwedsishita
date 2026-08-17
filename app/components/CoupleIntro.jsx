@@ -85,7 +85,7 @@ export default function CoupleIntro() {
               Invite
             </h2>
             <p className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl mt-4 md:mt-6 text-[#B35800]">
-              you to join us for the wedding celebrations of
+              You to join us for the wedding celebrations of
             </p>
             <h2 className="font-eb-garamond font-medium text-center text-5xl md:text-6xl lg:text-[100px] mt-6 leading-8 md:leading-tight text-[#B35800]">
               Shivangani
