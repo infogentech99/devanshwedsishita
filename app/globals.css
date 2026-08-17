@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-primary: #A7783A;
+  --color-primary: #a7783a;
   box-sizing: border-box;
-  overflow-x :hidden;
+  overflow-x: hidden;
 }
 
 html,
@@ -20,13 +20,12 @@ body {
   overflow-x: hidden;
 }
 
-
 @theme inline {
   --breakpoint-3xl: 120rem; /* 1920px */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--color-primary);
- --font-playfair: "Playfair Display", serif;
+  --font-playfair: "Playfair Display", serif;
   --font-garamond: "EB Garamond", serif;
   --font-kumbh: "Kumbh Sans", sans-serif;
 }
@@ -52,20 +51,22 @@ body {
   font-style: normal;
 }
 
-
 .font-playfair-display {
   font-family: "Playfair Display", serif;
 }
-
 
 .font-eb-garamond {
   font-family: "EB Garamond", serif;
 }
 
 .curved-edge {
-  --c: 120px; 
+  --c: 120px;
   mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000);
-  -webkit-mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000);
+  -webkit-mask: radial-gradient(
+    60% var(--c) at bottom,
+    #0000 calc(100% - 2px),
+    #000
+  );
 }
 
 @media (min-width: 640px) {
@@ -86,14 +87,14 @@ body {
   }
 }
 
-.floating-petal{
-  position:absolute;
+.floating-petal {
+  position: absolute;
   animation-name: petalFall;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   will-change: transform, opacity;
-  pointer-events:none;
-  opacity:0;
+  pointer-events: none;
+  opacity: 0;
 }
 
 @keyframes lampFlow {
@@ -160,167 +161,146 @@ body {
   }
 }
 
-/* .swiper-pagination {
-  position: static !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;                 
-  margin-top: 30px;      
-}
-
-.swiper-pagination-bullet{
- width: 12px!important; 
- height: 12px!important;
+.couple-swiper .swiper-pagination-bullet {
+  width: 7px !important;
+  height: 7px !important;
+  background: #cdcdcd !important;
+  opacity: 0.35 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: #ffffff!important;
-} */
-
-/* .couple-swiper .swiper-pagination {
-    bottom: -28px !important;
-  } */
-
-  .couple-swiper .swiper-pagination-bullet {
-    width: 7px !important;
-    height: 7px !important;
-    background: #cdcdcd !important;
-    opacity: 0.35 !important;
-  }
-
-.swiper-pagination-bullet-active{
   background: #cdcdcd !important;
 }
 
-  .couple-swiper .swiper-pagination-bullet-active {
-    opacity: 1 !important;
-  }
+.couple-swiper .swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}
 
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 20px !important;
-  }
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 20px !important;
+}
 
-@media (max-width: 768px){
-
- .swiper-pagination-bullet {
-    width: 5px !important;
-    height: 5px !important;
+@media (max-width: 768px) {
+ .couple-swiper .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
     background: #cdcdcd !important;
     opacity: 0.35 !important;
-    gap:3px;
-  
-  }
-
-}
-
-
-
-@keyframes petalFall{
-
-  0%{
-    transform: translateY(-10vh) translateX(0px) scale(var(--scale)) rotate(var(--rotate));
-    opacity:0;
-  }
-
-  10%{
-    opacity:1;
-  }
-
-  20%{
-    transform: translateY(60vh) translateX(-15px) scale(var(--scale)) rotate(calc(var(--rotate) + 40deg));
-  }
-
-  40%{
-    transform: translateY(130vh) translateX(20px) scale(var(--scale)) rotate(calc(var(--rotate) + 100deg));
-  }
-
-  60%{
-    transform: translateY(180vh) translateX(-10px) scale(var(--scale)) rotate(calc(var(--rotate) + 160deg));
-  }
-
-  80%{
-    transform: translateY(240vh) translateX(15px) scale(var(--scale)) rotate(calc(var(--rotate) + 220deg));
-  }
-
-  100%{
-    transform: translateY(300vh) translateX(-5px) scale(var(--scale)) rotate(calc(var(--rotate) + 280deg));
-    opacity:0;
+    gap: 3px;
   }
 }
 
-
-@media (max-width: 768px){
-@keyframes petalFall{
-
-  0%{
-    transform: translateY(-100px) translateX(0px) scale(var(--scale)) rotate(var(--rotate));
-    opacity:0;
+@keyframes petalFall {
+  0% {
+    transform: translateY(-10vh) translateX(0px) scale(var(--scale))
+      rotate(var(--rotate));
+    opacity: 0;
   }
 
-  10%{
-    opacity:1;
+  10% {
+    opacity: 1;
   }
 
-  25%{
-    transform: translateY(100px) translateX(-20px) scale(var(--scale)) rotate(calc(var(--rotate) + 60deg));
+  20% {
+    transform: translateY(60vh) translateX(-15px) scale(var(--scale))
+      rotate(calc(var(--rotate) + 40deg));
   }
 
-  50%{
-    transform: translateY(230px) translateX(20px) scale(var(--scale)) rotate(calc(var(--rotate) + 120deg));
+  40% {
+    transform: translateY(130vh) translateX(20px) scale(var(--scale))
+      rotate(calc(var(--rotate) + 100deg));
   }
 
-  75%{
-    transform: translateY(370px) translateX(-15px) scale(var(--scale)) rotate(calc(var(--rotate) + 200deg));
+  60% {
+    transform: translateY(180vh) translateX(-10px) scale(var(--scale))
+      rotate(calc(var(--rotate) + 160deg));
   }
 
-  100%{
-    transform: translateY(500px) translateX(10px) scale(var(--scale)) rotate(calc(var(--rotate) + 260deg));
-    opacity:0;
+  80% {
+    transform: translateY(240vh) translateX(15px) scale(var(--scale))
+      rotate(calc(var(--rotate) + 220deg));
   }
 
-
+  100% {
+    transform: translateY(300vh) translateX(-5px) scale(var(--scale))
+      rotate(calc(var(--rotate) + 280deg));
+    opacity: 0;
+  }
 }
+
+@media (max-width: 768px) {
+  @keyframes petalFall {
+    0% {
+      transform: translateY(-100px) translateX(0px) scale(var(--scale))
+        rotate(var(--rotate));
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    25% {
+      transform: translateY(100px) translateX(-20px) scale(var(--scale))
+        rotate(calc(var(--rotate) + 60deg));
+    }
+
+    50% {
+      transform: translateY(230px) translateX(20px) scale(var(--scale))
+        rotate(calc(var(--rotate) + 120deg));
+    }
+
+    75% {
+      transform: translateY(370px) translateX(-15px) scale(var(--scale))
+        rotate(calc(var(--rotate) + 200deg));
+    }
+
+    100% {
+      transform: translateY(500px) translateX(10px) scale(var(--scale))
+        rotate(calc(var(--rotate) + 260deg));
+      opacity: 0;
+    }
+  }
 }
-
-
 
 /* Desktop (lg and above) */
 @media (min-width: 1024px) {
-  @keyframes petalFall{
+  @keyframes petalFall {
+    0% {
+      transform: translateY(-20px) translateX(0px) scale(var(--scale))
+        rotate(var(--rotate));
+      opacity: 0;
+    }
 
-  0%{
-    transform: translateY(-20px) translateX(0px) scale(var(--scale)) rotate(var(--rotate));
-    opacity:0;
+    10% {
+      opacity: 1;
+    }
+
+    25% {
+      transform: translateY(1000px) translateX(-20px) scale(var(--scale))
+        rotate(calc(var(--rotate) + 60deg));
+      opacity: 1;
+    }
+
+    50% {
+      transform: translateY(2000px) translateX(20px) scale(var(--scale))
+        rotate(calc(var(--rotate) + 120deg));
+      opacity: 1;
+    }
+
+    75% {
+      transform: translateY(3000px) translateX(15px) scale(var(--scale))
+        rotate(calc(var(--rotate) + 200deg));
+      opacity: 0.5;
+    }
+
+    100% {
+      transform: translateY(4000px) translateX(10px) scale(var(--scale))
+        rotate(calc(var(--rotate) + 260deg));
+      opacity: 0;
+    }
   }
-
-  10%{
-    opacity:1;
-  }
-
-  25%{
-    transform: translateY(1000px) translateX(-20px) scale(var(--scale)) rotate(calc(var(--rotate) + 60deg));
-    opacity:1;
-  }
-
-  50%{
-    transform: translateY(2000px) translateX(20px) scale(var(--scale)) rotate(calc(var(--rotate) + 120deg));
-    opacity:1;
-  }
-
-  75%{
-    transform: translateY(3000px) translateX(15px) scale(var(--scale)) rotate(calc(var(--rotate) + 200deg));
-    opacity:0.5;
-  }
-
-  100%{
-    transform: translateY(4000px) translateX(10px) scale(var(--scale)) rotate(calc(var(--rotate) + 260deg));
-    opacity:0;
-  }
-
-
 }
-}
-
-
-
