@@ -67,11 +67,53 @@ export default function Home() {
 
       <audio ref={audioRef} src="/assets/back_song.mp3" loop preload="auto" playsInline />
       <RoseHeroTemp />
-      <FlyingBird delay={0} top="15%" size={70} duration={18} />
+      {/* <FlyingBird delay={0} top="15%" size={70} duration={18} />
       <FlyingBird delay={1} top="22%" size={50} duration={20} />
       <FlyingBird delay={2} top="10%" size={60} duration={17} />
       <FlyingBird delay={2} top="30%" size={40} duration={20} />
-      <FlyingBird delay={2} top="18%" size={55} duration={19} />
+      <FlyingBird delay={2} top="18%" size={55} duration={19} /> */}
+
+
+
+      <FlyingBird
+  delay={0}
+  top="15%"
+  mobileTop="4%"
+  size={70}
+  duration={18}
+/>
+
+<FlyingBird
+  delay={1}
+  top="22%"
+  mobileTop="7%"
+  size={50}
+  duration={20}
+/>
+
+<FlyingBird
+  delay={2}
+  top="10%"
+  mobileTop="3%"
+  size={60}
+  duration={17}
+/>
+
+<FlyingBird
+  delay={2}
+  top="30%"
+  mobileTop="10%"
+  size={40}
+  duration={20}
+/>
+
+<FlyingBird
+  delay={2}
+  top="18%"
+  mobileTop="6%"
+  size={55}
+  duration={19}
+/>
 
       <CoupleIntro />
 

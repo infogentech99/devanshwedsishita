@@ -44,7 +44,7 @@ export default function CoupleIntro() {
   return (
     <>
       <div
-        className="bg-[url('/assets/respo_bg.webp')] md:bg-[url('/assets/background.webp')] bg-size-[100%_auto]
+        className="bg-[url('/assets/respo_bg.webp')] md:bg-[url('/assets/background.webp')] bg-cover
                             md:bg-cover bg-top bg-no-repeat w-full relative overflow-hidden md:min-h-screen"
       >
         <RoseHeroTemp />
