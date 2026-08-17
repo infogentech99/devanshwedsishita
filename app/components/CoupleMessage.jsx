@@ -203,6 +203,14 @@ useEffect(() => {
         >
           A Guide for Guests
         </h2>
+         <h2
+          className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl text-center md:pt-2 lg:pt-5 lg:mt-4 
+                               lg:leading-tight px-3 md:px-0 text-[#B35800]"
+        >
+          Your presence means the world to us. To make your experience{" "}
+          <br className="hidden md:block" />
+          effortless and enjoyable, we've gathered a few useful details below.
+        </h2>
         <div className="flex gap-2 mt-3 lg:mt-6">
           <hr className="w-10 lg:w-20 md:border my-3 md:my-6 border-[#B35800]" />
           <img
@@ -250,14 +258,14 @@ useEffect(() => {
         </div>
         <hr className="hidden lg:block lg:w-222 lg:border border-[#735C004D]" />
 
-        <h2
+        {/* <h2
           className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl text-center md:pt-2 lg:pt-15 lg:mt-4 
                                lg:leading-tight px-3 md:px-0 text-[#B35800]"
         >
           Your presence means the world to us. To make your experience{" "}
           <br className="hidden md:block" />
           effortless and enjoyable, we've gathered a few useful details below.
-        </h2>
+        </h2> */}
         <div className="relative bg-[url('/assets/rsvp.webp')] bg-cover bg-center bg-no-repeat overflow-hidden w-66 h-96 md:w-94 md:h-135 lg:w-187 lg:h-269 mt-40">
           <div className="absolute inset-0 flex flex-col items-center justify-center top-26 md:top-33 lg:top-45">
             <h2 className="font-playfair-display font-medium italic text-center text-2xl md:text-3xl lg:text-[46px] leading-5 md:leading-8 lg:leading-11 text-[#B35800]">
@@ -334,8 +342,8 @@ useEffect(() => {
           />
           <p className="font-eb-garamond font-medium text-base md:text-xl lg:text-[28px] text-center mt-4 px-6 md:px-0 text-[#B35800]">
             Our families are excited that you are able to join us in celebrating
-            what we <br className="hidden md:block" />
-            hope will be one of the happiest days of our lives.
+           <br className="hidden md:block" />
+            one of the happiest days of our life.
           </p>
           <div className="flex gap-3 justify-center items-center mt-4">
             <a href="https://www.instagram.com/theinvitearc/" target="_blank">

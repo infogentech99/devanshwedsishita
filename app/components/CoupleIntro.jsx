@@ -72,10 +72,10 @@ export default function CoupleIntro() {
               alt="ganesh"
               className="w-16 h-16 md:w-25 md:h-24 lg:w-49 lg:h-47 mt-2 lg:mt-4"
             />
-            <h2 className="font-eb-garamond font-medium text-base md:text-2xl lg:text-3xl mt-2 md:mt-0 text-[#B35800]">
+            {/* <h2 className="font-eb-garamond font-medium text-base md:text-2xl lg:text-3xl mt-2 md:mt-0 text-[#B35800]">
               With the heavenly blessings of
             </h2>
-            <hr className="w-20 lg:w-26 lg:border-2 my-3 lg:my-4 border-[#B35800]" />
+            <hr className="w-20 lg:w-26 lg:border-2 my-3 lg:my-4 border-[#B35800]" /> */}
             <h2 className="font-eb-garamond font-medium text-xl md:text-3xl lg:text-[42px] text-[#B35800]">
               The Anands and Sahas
             </h2>
