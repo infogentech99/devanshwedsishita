@@ -341,8 +341,8 @@ useEffect(() => {
             className="w-7 h-7 lg:w-7 lg:h-7 mt-3"
           />
           <p className="font-eb-garamond font-medium text-base md:text-xl lg:text-[28px] text-center mt-4 px-6 md:px-0 text-[#B35800]">
-            Our families are excited that you are able to join us in celebrating <br className="hidden md:block" />
-             one of the happiest days of our life.
+            We are excited to celebrate <br className="hidden md:block" />
+              the happiest days of our life with you.
           </p>
           {/* <div className="flex gap-3 justify-center items-center mt-4">
             <a href="https://www.instagram.com/theinvitearc/" target="_blank">

@@ -8,7 +8,7 @@ export default function CoupleIntro() {
       title_ceremony: "Mehendi",
       image: "/assets/mehendi.webp",
       date: "Friday, November 20th 2026",
-      time: "Join Us at 12:30 PM",
+      time: "at 12:30 PM",
       venue: "The Marriott, Jim Corbett",
       link: "https://maps.app.goo.gl/6wAY9hsmkpHv2gLd7",
     },
@@ -17,7 +17,7 @@ export default function CoupleIntro() {
       title_ceremony: "Sangeet",
       image: "/assets/sangeet.webp",
       date: "Friday, November 20th 2026",
-      time: "Join Us at 8:00 PM",
+      time: "at 8:00 PM",
       venue: "The Marriott, Jim Corbett",
       link: "https://maps.app.goo.gl/6wAY9hsmkpHv2gLd7",
     },
@@ -26,7 +26,7 @@ export default function CoupleIntro() {
       title_ceremony: "Haldi & Chooda",
       image: "/assets/haldi.webp",
       date: "Friday, November 21st 2026",
-      time: "Join Us at 9:30 AM",
+      time: "at 9:30 AM",
       venue: "The Marriott, Jim Corbett",
       link: "https://maps.app.goo.gl/6wAY9hsmkpHv2gLd7",
     },
@@ -35,7 +35,7 @@ export default function CoupleIntro() {
       title_ceremony: "Wedding",
       image: "/assets/wedding.webp",
       date: "Friday, November 21st 2026",
-      time: "Join Us at 4:30 PM",
+      time: "at 4:30 PM",
       venue: "The Marriott, Jim Corbett",
       link: "https://maps.app.goo.gl/6wAY9hsmkpHv2gLd7",
     },
@@ -81,11 +81,11 @@ export default function CoupleIntro() {
             </h2>
           </div>
           <div className="text-center mt-8">
-            <h2 className="font-playfair-display font-semibold text-3xl md:text-4xl lg:text-6xl leading-tight lg:tracking-wide tracking-wider text-[#B35800]">
-              INVITE
+            <h2 className="font-playfair-display font-semibold text-3xl md:text-4xl lg:text-6xl leading-tight lg:tracking-wide tracking-wider text-[#B35800] italic">
+              Invite
             </h2>
             <p className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl mt-4 md:mt-6 text-[#B35800]">
-              you to join us in the wedding celebrations of
+              you to join us for the wedding celebrations of
             </p>
             <h2 className="font-eb-garamond font-medium text-center text-5xl md:text-6xl lg:text-[100px] mt-6 leading-8 md:leading-tight text-[#B35800]">
               Shivangani
@@ -97,9 +97,23 @@ export default function CoupleIntro() {
               <br />
               Ashanka
             </h2>
+
+<p className="font-eb-garamond font-medium text-base md:text-xl lg:text-3xl mt-12 text-[#B35800]">
+              At the Marriott Jim Corbett
+              <br/>
+               <a
+                    href="https://maps.app.goo.gl/6wAY9hsmkpHv2gLd7"
+                    className="font-eb-garamond font-medium underline md:text-lg text-[13px] md:mt-2 text-[#B35800]"
+                    target="_blank"
+                  >
+                    View Directions
+                  </a>
+            </p>
+
             <p className="font-eb-garamond font-medium text-base md:text-xl lg:text-3xl mt-12 text-[#B35800]">
               On the following events
             </p>
+
             
           </div>
 
@@ -116,19 +130,13 @@ export default function CoupleIntro() {
                   <h2 className="font-playfair-display font-medium text-[36px] md:text-3xl lg:text-[42px] mt-2 md:mt-4 text-[#B35800]">
                     {event.title_ceremony}
                   </h2>
-                  <p className="font-eb-garamond font-medium md:mt-2 text-[#B35800]">
+                  <p className="font-eb-garamond font-medium md:mt-2 text-[#B35800] text-lg">
                     <span className="text-base">{event.date}</span> <br />
                     <span className="text-base"> {event.time} </span> <br />
-                    <span className="text-base uppercase"> {event.venue} </span>
+                    {/* <span className="text-base uppercase"> {event.venue} </span> */}
                   </p>
 
-                  <a
-                    href={event.link}
-                    className="font-eb-garamond font-medium underline text-sm md:mt-2 text-[#B35800]"
-                    target="_blank"
-                  >
-                    View Directions
-                  </a>
+                  
                 </div>
               ))}
             </div>
