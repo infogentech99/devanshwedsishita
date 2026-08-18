@@ -6,7 +6,7 @@ export default function CoupleUs() {
     return (
 
             <div className="bg-[url('/assets/res_bg_two.webp')] md:bg-[url('/assets/bg_two.webp')] bg-cover bg-no-repeat">
-                <div className="flex flex-col items-center h-120 md:h-176 lg:h-318 3xl:h-403">
+                <div className="flex flex-col items-center h-118 md:h-176 lg:h-318 3xl:h-403">
                   <h2 className="font-playfair-display font-medium italic text-2xl md:text-4xl lg:text-7xl text-center pt-10 md:pt-6 lg:pt-14 3xl:pt-24 text-[#B35800]">
                     With <br /> Love From Us
                   </h2>
