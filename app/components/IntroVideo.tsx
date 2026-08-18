@@ -4,10 +4,25 @@ import { useEffect, useRef, useState } from "react";
 
 export default function IntroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const [started, setStarted] = useState(false);
   const [hide, setHide] = useState(false);
   const [show, setShow] = useState(true);
+
+  useEffect(() => {
+    const setVh = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    };
+    setVh();
+    window.addEventListener("resize", setVh);
+    window.addEventListener("orientationchange", setVh);
+    return () => {
+      window.removeEventListener("resize", setVh);
+      window.removeEventListener("orientationchange", setVh);
+    };
+  }, []);
 
   useEffect(() => {
     if (show) {
@@ -15,7 +30,6 @@ export default function IntroVideo() {
     } else {
       document.body.style.overflow = "auto";
     }
-
     return () => {
       document.body.style.overflow = "auto";
     };
@@ -23,7 +37,6 @@ export default function IntroVideo() {
 
   const playVideo = async () => {
     if (!videoRef.current) return;
-
     try {
       setStarted(true);
       await videoRef.current.play();
@@ -34,7 +47,6 @@ export default function IntroVideo() {
 
   const handleEnd = () => {
     setHide(true);
-
     setTimeout(() => {
       setShow(false);
     }, 700);
@@ -44,54 +56,43 @@ export default function IntroVideo() {
 
   return (
     <div
-      className={`fixed inset-0 z-[999999] h-dvh w-full transition-opacity duration-700 ${
+      ref={containerRef}
+      className={`fixed inset-0 z-[999999] w-full transition-opacity duration-700 ${
         hide ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
+      style={{ height: "calc(var(--vh, 1vh) * 100)" }}
     >
-      {/* <video
+      <video
         ref={videoRef}
-         poster="/assets/hero_video.png"
+        poster="/assets/hero_video.png"
         playsInline
+        webkit-playsinline="true"
+        muted
         preload="auto"
         onEnded={handleEnd}
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0"
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          objectPosition: "center",
+        }}
       >
         <source src="/assets/hero_video.mp4" type="video/mp4" />
-      </video> */}
-
-<video
-  ref={videoRef}
-  poster="/assets/hero_video.png"
-  playsInline
-  muted
-  preload="auto"
-  onEnded={handleEnd}
-  className="absolute left-0 top-0 block h-[100dvh] w-[100vw] max-w-none object-cover object-center"
-  style={{
-    width: "100vw",
-    height: "100dvh",
-    minWidth: "100vw",
-    minHeight: "100dvh",
-    objectFit: "cover",
-    objectPosition: "center center",
-  }}
->
-  <source src="/assets/hero_video.mp4" type="video/mp4" />
-</video>
+      </video>
 
       {!started && (
         <button
           onClick={playVideo}
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
-          w-20 h-20 md:w-28 md:h-28 rounded-full  
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
+          w-20 h-20 md:w-28 md:h-28 rounded-full   
           text-black text-4xl hover:scale-110 transition cursor-pointer"
         >
-          
           <img
-                    src="/assets/icon2.png"
-                    alt="icon2"
-                    className="w-[300px] lg:w-[320px] h-auto mx-auto"
-                  />
+            src="/assets/icon2.png"
+            alt="icon2"
+            className="w-[300px] lg:w-[320px] h-auto mx-auto"
+          />
         </button>
       )}
     </div>
