@@ -4,25 +4,10 @@ import { useEffect, useRef, useState } from "react";
 
 export default function IntroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
 
   const [started, setStarted] = useState(false);
   const [hide, setHide] = useState(false);
   const [show, setShow] = useState(true);
-
-  useEffect(() => {
-    const setVh = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-    };
-    setVh();
-    window.addEventListener("resize", setVh);
-    window.addEventListener("orientationchange", setVh);
-    return () => {
-      window.removeEventListener("resize", setVh);
-      window.removeEventListener("orientationchange", setVh);
-    };
-  }, []);
 
   useEffect(() => {
     if (show) {
@@ -56,11 +41,10 @@ export default function IntroVideo() {
 
   return (
     <div
-      ref={containerRef}
       className={`fixed inset-0 z-[999999] w-full transition-opacity duration-700 ${
         hide ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
-      style={{ height: "calc(var(--vh, 1vh) * 100)" }}
+      style={{ height: "100lvh", minHeight: "100vh" }}
     >
       <video
         ref={videoRef}
