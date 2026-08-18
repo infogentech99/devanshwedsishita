@@ -11,11 +11,23 @@ export default function IntroVideo() {
 
   useEffect(() => {
     if (show) {
+      document.body.style.position = "fixed";
+      document.body.style.top = "0";
+      document.body.style.left = "0";
+      document.body.style.right = "0";
       document.body.style.overflow = "hidden";
     } else {
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
       document.body.style.overflow = "auto";
     }
     return () => {
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
       document.body.style.overflow = "auto";
     };
   }, [show]);
@@ -41,10 +53,10 @@ export default function IntroVideo() {
 
   return (
     <div
-      className={`fixed inset-0 z-[999999] w-full transition-opacity duration-700 ${
+      className={`fixed inset-0 z-[999999] transition-opacity duration-700 ${
         hide ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
-      style={{ height: "100lvh", minHeight: "100vh" }}
+      style={{ width: "100vw", height: "100%" }}
     >
       <video
         ref={videoRef}
@@ -54,8 +66,10 @@ export default function IntroVideo() {
         muted
         preload="auto"
         onEnded={handleEnd}
-        className="absolute inset-0"
         style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
           width: "100%",
           height: "100%",
           objectFit: "cover",
