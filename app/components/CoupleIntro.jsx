@@ -65,7 +65,7 @@ export default function CoupleIntro() {
           </h2>
           <div className="flex flex-col items-center text-center md:gap-6 mt-0 pt-80 lg:pt-150">
             <h2 className="font-eb-garamond font-bold text-base md:text-2xl lg:text-3xl text-center text-[#B35800]">
-              ॐ श्री गणेशाय नम
+              ॐ श्री गणेशाय नम:
             </h2>
             <img
               src="/assets/aum.webp"
