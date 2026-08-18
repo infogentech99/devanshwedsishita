@@ -11,7 +11,7 @@ const [timeLeft, setTimeLeft] = useState({
   days: 14,
   hours: 12,
   minutes: 28,
-  seconds: 0,
+  seconds: 0, 
 });
 
 useEffect(() => {

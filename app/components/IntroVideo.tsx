@@ -86,11 +86,7 @@ export default function IntroVideo() {
           w-20 h-20 md:w-28 md:h-28 rounded-full   
           text-black text-4xl hover:scale-110 transition cursor-pointer"
         >
-          <img
-            src="/assets/icon2.png"
-            alt="icon2"
-            className="w-[300px] lg:w-[320px] h-auto mx-auto"
-          />
+         
         </button>
       )}
     </div>
