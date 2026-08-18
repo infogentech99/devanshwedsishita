@@ -48,7 +48,7 @@ export default function IntroVideo() {
         hide ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
-      <video
+      {/* <video
         ref={videoRef}
          poster="/assets/hero_video.png"
         playsInline
@@ -57,7 +57,19 @@ export default function IntroVideo() {
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source src="/assets/hero_video.mp4" type="video/mp4" />
-      </video>
+      </video> */}
+
+      <video
+  ref={videoRef}
+  poster="/assets/hero_video.png"
+  playsInline
+  muted
+  preload="auto"
+  onEnded={handleEnd}
+  className="absolute inset-0 block h-full w-full max-w-none object-cover object-center"
+>
+  <source src="/assets/hero_video.mp4" type="video/mp4" />
+</video>
 
       {!started && (
         <button
