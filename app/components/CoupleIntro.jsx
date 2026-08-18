@@ -25,7 +25,7 @@ export default function CoupleIntro() {
     {
       title_ceremony: "Haldi & Chooda",
       image: "/assets/haldi.webp",
-      date: "Friday, November 21st 2026",
+      date: "Saturday, November 21st 2026",
       time: "at 9:30 AM",
       venue: "The Marriott, Jim Corbett",
       link: "https://maps.app.goo.gl/6wAY9hsmkpHv2gLd7",
@@ -34,7 +34,7 @@ export default function CoupleIntro() {
     {
       title_ceremony: "Wedding",
       image: "/assets/wedding.webp",
-      date: "Friday, November 21st 2026",
+      date: "Saturday, November 21st 2026",
       time: "at 4:30 PM",
       venue: "The Marriott, Jim Corbett",
       link: "https://maps.app.goo.gl/6wAY9hsmkpHv2gLd7",
@@ -110,9 +110,9 @@ export default function CoupleIntro() {
                   </a>
             </p>
 
-            <p className="font-eb-garamond font-medium text-base md:text-xl lg:text-3xl mt-12 text-[#B35800]">
+            {/* <p className="font-eb-garamond font-medium text-base md:text-xl lg:text-3xl mt-12 text-[#B35800]">
               On the following events
-            </p>
+            </p> */}
 
             
           </div>
