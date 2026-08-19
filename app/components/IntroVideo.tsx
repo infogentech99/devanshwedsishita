@@ -60,7 +60,7 @@ export default function IntroVideo() {
     >
       <video
         ref={videoRef}
-        poster="/assets/hero_video.png"
+        poster="/assets/hero_video2.png"
         playsInline
         webkit-playsinline="true"
         muted
