@@ -216,7 +216,7 @@ useEffect(() => {
                 Weather
               </h2>
               <p className="font-eb-garamond font-medium text-sm md:text-base lg:text-xl mt-1 md:leading-6 text-[#B35800]">
-                November in Jim Corbett is pleasantly <br /> cool, with slightly
+                November is pleasantly cool, <br /> with slightly
                 nippy mornings and <br />
                 evenings. We recommend carrying a <br /> light jacket or shawl.
               </p>
