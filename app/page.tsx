@@ -6,7 +6,6 @@ import CoupleMessage from "@/app/components/CoupleMessage";
 import CoupleLogo from "@/app/components/CoupleLogo";
 import FlyingBird from "@/app/components/FlyingBird";
 import RoseHeroTemp from "@/app/components/RoseHeroTemp";
-import IntroVideo from "@/app/components/IntroVideo";
 export default function Home() {
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -67,7 +66,7 @@ export default function Home() {
 
       <audio ref={audioRef} src="/assets/back_song.mp3" loop preload="auto" playsInline />
       <RoseHeroTemp />
-      <IntroVideo />
+    
       {/* <FlyingBird delay={0} top="15%" size={70} duration={18} />
       <FlyingBird delay={1} top="22%" size={50} duration={20} />
       <FlyingBird delay={2} top="10%" size={60} duration={17} />

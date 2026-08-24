@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 export default function CoupleMessage() {
-  const TARGET_DATE = new Date("2026-11-21").getTime();
+  const TARGET_DATE = new Date("2026-11-26").getTime();
 
 const [timeLeft, setTimeLeft] = useState({
   days: 14,
@@ -61,27 +61,10 @@ useEffect(() => {
 
   const testimonial = [
     {
-      img: "/assets/shiv_couple1.webp",
+      img: "/assets/devansh_couple.webp",
     },
 
-    {
-      img: "/assets/shiv_couple2.webp",
-    },
-
-    {
-      img: "/assets/shiv_couple4.webp",
-    },
-
-    {
-      img: "/assets/shiv_couple5.webp",
-    },
-
-    {
-      img: "/assets/shiv_couple6.webp",
-    },
-    {
-      img: "/assets/shiv_couple3.webp",
-    },
+   
   ];
 
   return (
@@ -275,7 +258,7 @@ useEffect(() => {
               Click the link to RSVP
             </p>
             <a
-              href="https://wa.me/919818185550"
+              href="https://wa.me/919412386468"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -289,7 +272,10 @@ useEffect(() => {
           </div>
         </div>
         <div className="flex flex-col items-center h-80 md:h-100 lg:h-110 md:gap-2">
-          <h2 className="font-playfair-display font-medium italic text-4xl md:text-6xl lg:text-[100px] text-center pt-35 lg:pt-60 mt-4 text-[#B35800]">
+             <h2 className="font-playfair-display font-medium italic text-2xl md:text-2xl lg:text-[40px] text-center pt-35 lg:pt-60 mt-4 text-[#B35800]">
+           #DevgothisIshq
+          </h2>
+          <h2 className="font-playfair-display font-medium italic text-4xl md:text-6xl lg:text-[100px] text-center mt-4 text-[#B35800]">
             The Countdown <br /> Begins
           </h2>
           <div className="flex gap-2 mt-4">
