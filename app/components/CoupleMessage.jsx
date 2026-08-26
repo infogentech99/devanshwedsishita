@@ -69,8 +69,8 @@ useEffect(() => {
 
   return (
     <div className="bg-[url('/assets/bg_three.webp')] bg-cover bg-no-repeat">
-      <div className="flex flex-col items-center h-640 md:h-770 lg:h-1200 3xl:h-1200">
-        <h2 className="font-playfair-display font-semibold text-base md:text-xl lg:text-[38px] text-center pt-12 md:pt-18 lg:pt-32 text-[#B35800]">
+      <div className="flex flex-col items-center h-500 md:h-550 lg:h-800 3xl:h-800">
+        {/* <h2 className="font-playfair-display font-semibold text-base md:text-xl lg:text-[38px] text-center pt-12 md:pt-18 lg:pt-32 text-[#B35800]">
           INTRODUCING
         </h2>
         <h2
@@ -78,8 +78,8 @@ useEffect(() => {
                                mt-12 md:mt-16 lg:mt-28 leading-7 md:leading-8 lg:leading-8 text-[#B35800]"
         >
           The Couple
-        </h2>
-        <div className="flex gap-2 mt-6 md:mt-8 lg:mt-12">
+        </h2> */}
+        {/* <div className="flex gap-2 mt-6 md:mt-8 lg:mt-12">
           <hr className="w-10 lg:w-20 md:border my-3 md:my-6 border-[#B35800]" />
           <img
             src="/assets/icon.webp"
@@ -87,12 +87,12 @@ useEffect(() => {
             className="w-6 h-6 lg:w-6 lg:h-6 md:mt-3"
           />
           <hr className="w-10 lg:w-20 md:border my-3 md:my-6 border-[#B35800]" />
-        </div>
+        </div> */}
 
     <div className="relative w-full flex justify-center items-center mt-6 md:mt-8">
 
   {/* IMAGE WINDOW / CLIPPING AREA */}
-  <div
+  {/* <div
     className="
       absolute
       z-0
@@ -153,10 +153,10 @@ useEffect(() => {
         </SwiperSlide>
       ))}
     </Swiper>
-  </div>
+  </div> */}
 
   {/* FRAME - ALWAYS ON TOP */}
-  <img
+  {/* <img
     src="/assets/couple_img_n.webp"
     alt="couple_img"
     className="
@@ -174,7 +174,7 @@ useEffect(() => {
       lg:mt-0
       object-contain
     "
-  />
+  /> */}
 
 </div>
 
@@ -261,12 +261,13 @@ useEffect(() => {
               href="https://wa.me/919412386468"
               target="_blank"
               rel="noopener noreferrer"
+              className="flex items-center md:gap-4 gap-2"
             >
               <img
                 src="/assets/whatsapp.webp"
                 alt="WhatsApp"
                 className="w-7.5 h-7.5 md:w-11.25 md:h-11.25 lg:w-15 lg:h-15 mt-2 lg:mt-3"
-              />
+              /> <span className="font-eb-garamond font-semibold text-center text-xs md:text-sm lg:text-2xl mt-2 lg:mt-4 text-[#B35800]">Dr. TC Agarwal</span>
             </a>
             
           </div>

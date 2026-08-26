@@ -4,14 +4,17 @@ import RoseHeroTemp from "@/app/components/RoseHeroTemp";
 
 export default function CoupleIntro() {
   const events = [
-
     {
       title_ceremony: "Haldi",
       image: "/assets/haldi.webp",
       date: "Wednesday, November 25th 2026",
       time: "at 11:30 AM",
       venue: "Bel-La Monde",
-      venue_address: <>NH309, Ramnagar, Dhikuli, Garjiya, <br/> Uttarakhand 244715</>,
+      venue_address: (
+        <>
+          NH309, Ramnagar, Dhikuli, Garjiya, <br /> Uttarakhand 244715
+        </>
+      ),
       link: "https://maps.app.goo.gl/HRMYY5gNt4RnpmKn6",
     },
 
@@ -21,7 +24,11 @@ export default function CoupleIntro() {
       date: "Wednesday, November 25th 2026",
       time: "at 4:00 PM",
       venue: "Bel-La Monde",
-      venue_address: <>NH309, Ramnagar, Dhikuli, Garjiya, <br/> Uttarakhand 244715</>,
+      venue_address: (
+        <>
+          NH309, Ramnagar, Dhikuli, Garjiya, <br /> Uttarakhand 244715
+        </>
+      ),
       link: "https://maps.app.goo.gl/HRMYY5gNt4RnpmKn6",
     },
 
@@ -31,18 +38,25 @@ export default function CoupleIntro() {
       date: "Wednesday, November 25th 2026",
       time: "at 6:00 PM",
       venue: "Bel-La Monde",
-      venue_address: <>NH309, Ramnagar, Dhikuli, Garjiya, <br/> Uttarakhand 244715</>,
+      venue_address: (
+        <>
+          NH309, Ramnagar, Dhikuli, Garjiya, <br /> Uttarakhand 244715
+        </>
+      ),
       link: "https://maps.app.goo.gl/HRMYY5gNt4RnpmKn6",
     },
 
-    
     {
       title_ceremony: "Tika & Ghudchadi",
       image: "/assets/tika.webp",
       date: "Thursday, November 26th 2026",
       time: "at 10:00 AM",
       venue: "Bel-La Monde",
-      venue_address: <>NH309, Ramnagar, Dhikuli, Garjiya, <br/> Uttarakhand 244715</>,
+      venue_address: (
+        <>
+          NH309, Ramnagar, Dhikuli, Garjiya, <br /> Uttarakhand 244715
+        </>
+      ),
       link: "https://maps.app.goo.gl/HRMYY5gNt4RnpmKn6",
     },
 
@@ -52,7 +66,11 @@ export default function CoupleIntro() {
       date: "Thursday, November 26th 2026",
       time: "at 1:00 PM",
       venue: "Bel-La Monde",
-      venue_address: <>NH309, Ramnagar, Dhikuli, Garjiya, <br/> Uttarakhand 244715</>,
+      venue_address: (
+        <>
+          NH309, Ramnagar, Dhikuli, Garjiya, <br /> Uttarakhand 244715
+        </>
+      ),
       link: "https://maps.app.goo.gl/HRMYY5gNt4RnpmKn6",
     },
 
@@ -62,11 +80,13 @@ export default function CoupleIntro() {
       date: "Thursday, November 26th 2026",
       time: "at 5:00 PM",
       venue: "Bel-La Monde",
-      venue_address: <>NH309, Ramnagar, Dhikuli, Garjiya, <br/> Uttarakhand 244715</>,
+      venue_address: (
+        <>
+          NH309, Ramnagar, Dhikuli, Garjiya, <br /> Uttarakhand 244715
+        </>
+      ),
       link: "https://maps.app.goo.gl/HRMYY5gNt4RnpmKn6",
     },
-
-    
   ];
 
   return (
@@ -101,7 +121,8 @@ export default function CoupleIntro() {
               className="w-16 h-16 md:w-25 md:h-24 lg:w-49 lg:h-47 mt-2 lg:mt-4"
             />
             <h2 className="font-eb-garamond font-medium text-base md:text-2xl lg:text-3xl mt-2 md:mt-0 text-[#B35800]">
-              With the heavenly blessings of <br/> Late Smt Kamla Devi & Late Shri Gainda Lal Agarwal
+              With the heavenly blessings of <br /> Late Smt Kamla Devi & Late
+              Shri Gainda Lal Agarwal
             </h2>
             {/* <hr className="w-20 lg:w-26 lg:border-2 my-3 lg:my-4 border-[#B35800]" /> */}
             {/* <h2 className="font-eb-garamond font-medium text-xl md:text-3xl lg:text-[42px] text-[#B35800]">
@@ -109,17 +130,18 @@ export default function CoupleIntro() {
             </h2> */}
           </div>
           <div className="text-center mt-8">
-            <h2 className="font-playfair-display font-semibold text-3xl md:text-4xl lg:text-6xl leading-tight lg:tracking-wide tracking-wider text-[#B35800] italic">
+            {/* <h2 className="font-playfair-display font-semibold text-3xl md:text-4xl lg:text-6xl leading-tight lg:tracking-wide tracking-wider text-[#B35800] italic">
               Invite
-            </h2>
-            <p className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl mt-4 md:mt-6 text-[#B35800]">
-              You to join us for the wedding celebrations of
+            </h2> */}
+            <p className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl mt-4 md:mt-6 text-[#B35800] px-6 md:px-0">
+              We Invite you and your Family to join us for the wedding
+              celebrations of
             </p>
             <h2 className="font-eb-garamond font-medium text-center text-5xl md:text-6xl lg:text-[100px] mt-6 leading-8 md:leading-tight text-[#B35800]">
               Devansh
             </h2>
-             <h2 className="font-eb-garamond font-medium text-base md:text-2xl lg:text-3xl mt-2 md:mt-0 text-[#B35800]">
-             (Dr. Preeti Agarwal & Dr. T.C. Agarwal)
+            <h2 className="font-eb-garamond font-medium text-base md:text-2xl lg:text-3xl mt-2 md:mt-0 text-[#B35800]">
+              (Son of Dr. Preeti Agarwal & Dr. T.C. Agarwal)
             </h2>
             <h2 className="font-playfair-display font-medium text-5xl md:text-6xl lg:text-[100px] text-center mt-4 leading-tight text-[#B35800]">
               <span className="text-center mt-4 lg:mt-10 text-5xl md:text-6xl lg:text-[100px] leading-tight text-[#B35800] font-playfair-display">
@@ -129,10 +151,10 @@ export default function CoupleIntro() {
               Ishita
             </h2>
             <h2 className="font-eb-garamond font-medium text-base md:text-2xl lg:text-3xl mt-2 md:mt-0 text-[#B35800]">
-             (Mrs. Shalini Agarwal & Mr. Vivek Agarwal)
+              (Daughter of Mrs. Shalini Agarwal & Mr. Vivek Agarwal)
             </h2>
 
-{/* <p className="font-eb-garamond font-medium text-base md:text-xl lg:text-3xl mt-12 text-[#B35800]">
+            {/* <p className="font-eb-garamond font-medium text-base md:text-xl lg:text-3xl mt-12 text-[#B35800]">
               At the Marriott Jim Corbett
               <br/>
                <a
@@ -147,8 +169,6 @@ export default function CoupleIntro() {
             <p className="font-eb-garamond font-medium text-base md:text-xl lg:text-3xl mt-12 text-[#B35800]">
               On the following events
             </p>
-
-            
           </div>
 
           <div className="flex justify-center mt-15 md:mt-20">
@@ -158,7 +178,7 @@ export default function CoupleIntro() {
                   <img
                     src={event.image}
                     alt={event.venue}
-                    className="w-95 h-auto md:w-76 lg:w-80"
+                    className="w-80 h-auto md:w-76 lg:w-80"
                   />
 
                   <h2 className="font-playfair-display font-medium text-[36px] md:text-3xl lg:text-[42px] mt-2 md:mt-4 text-[#B35800]">
@@ -167,20 +187,39 @@ export default function CoupleIntro() {
                   <p className="font-eb-garamond font-medium md:mt-2 text-[#B35800] text-lg">
                     <span className="text-base">{event.date}</span> <br />
                     <span className="text-base"> {event.time} </span> <br />
-                    <span className="text-base uppercase"> {event.venue} </span> <br/>
+                    {/* <span className="text-base uppercase"> {event.venue} </span> <br/>
                     <span className="text-base uppercase"> {event.venue_address} </span> <br/>
                      <a
                     href={event.link}
                     className="font-eb-garamond font-medium text-[#B35800] underline text-lg md:text-sm mt-2"
                     target="_blank">
                     View Directions
-                  </a>
+                  </a> */}
                   </p>
-
-                  
                 </div>
               ))}
             </div>
+          </div>
+
+          <div className="flex justify-center items-center">
+            <p className="font-eb-garamond font-medium md:mt-10 text-[#B35800] text-lg text-center mt-10">
+              <h2 className="font-playfair-display font-medium text-[36px] md:text-3xl lg:text-[42px] mt-2 md:mt-4 text-[#B35800]">
+                Venue
+              </h2>
+              <span className="text-base uppercase">Bel-La Monde </span> <br />
+              <span className="text-base uppercase">
+                NH309, Ramnagar, Dhikuli, Garjiya, <br /> Uttarakhand
+                244715{" "}
+              </span>{" "}
+              <br />
+              <a
+                href="https://maps.app.goo.gl/HRMYY5gNt4RnpmKn6"
+                className="font-eb-garamond font-medium text-[#B35800] underline text-lg md:text-sm mt-2"
+                target="_blank"
+              >
+                View Directions
+              </a>
+            </p>
           </div>
         </div>
       </div>
