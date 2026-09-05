@@ -221,7 +221,7 @@ export default function CoupleIntro() {
               </h2>
               <span className="text-base uppercase">Bel-La Monde </span> <br />
               <span className="text-base uppercase">
-                NH309, Ramnagar, Dhikuli, Garjiya, <br /> Uttarakhand
+                NH309, Jim Corbett, Dhikuli, Garjiya, <br /> Uttarakhand
                 244715{" "}
               </span>{" "}
               <br />
