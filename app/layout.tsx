@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://devanshwedsishita.vercel.app/"),
+  metadataBase: new URL("https://devanshandishita.invitearc.com/"),
 
   openGraph: {
     title: "Devansh & Ishita ",
     description: "Join as they begin their forever. 25 & 26 November, 2026",
-    url: "https://devanshwedsishita.vercel.app/",
+    url: "https://devanshandishita.invitearc.com/",
     siteName: "InviteArc",
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
 
  other: {
-    "og:image:secure_url": "https://devanshwedsishita.vercel.app/og.jpg",
+    "og:image:secure_url": "https://devanshandishita.invitearc.com/og.jpg",
     "og:image:type": "image/jpg",
   },
 };
